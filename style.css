@@ -1,0 +1,314 @@
+.testColor {
+	color: #f962a0, #fa92ac, #fa7aa6, #fbabb2, #fcdbbe, #fbc3b8, #fcf3c4;
+}
+
+/* Destroy all fr */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ul {
+	list-style: none;
+}
+
+/* Menu  */
+.menu-ngang {
+	background: #f794bd;
+	/* position: fixed; */
+	width: 100%;
+}
+.menu-ngang > img {
+	float: left;
+	width: 100px;
+	height: 40px;
+}
+
+.menu-ngang > li {
+	display: inline-block;
+	position: relative;
+}
+.menu-ngang a {
+	color: white;
+	text-decoration: none;
+	padding: 10px 15px;
+	display: block;
+}
+.menu-ngang a:hover {
+	background: #f7a3c6;
+	font-weight: bold;
+	color: black;
+	border-radius: 8px 8px 0px 0px;
+}
+/* submenuuuuuu */
+.menu-ngang ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background: #f794bd;
+	min-width: 150px;
+}
+.menu-ngang ul li {
+	display: block;
+}
+.menu-ngang li:hover > ul {
+	display: block;
+}
+.menu-ngang ul ul {
+	left: 100%;
+	top: 0;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+/* Logo */
+.logo {
+	height: 100px;
+	width: 100px;
+	display: block;
+	content: url("/images/logo.png");
+	alt: "Loading";
+}
+.logo-title {
+	width: 250px;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	/* color: rgb(132, 68, 89); */
+	color: red;
+	text-shadow: 0px 0px 8px white;
+	padding-left: 50px;
+	font-style: italic;
+}
+.logo-title::before {
+	content: "Everchill Dairy";
+	font-size: 40px;
+	font-weight: bold;
+}
+
+/* Footer */
+footer {
+	height: 50px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	background-color: #f5bbd3;
+	color: white;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+.footer-logo {
+	height: 50px;
+	width: 50px;
+	display: block;
+	content: url("/images/logo.png");
+	alt: "Loading";
+	padding: 5px;
+}
+.footer-copyright {
+	width: 100%;
+	padding: 5px;
+	text-align: center;
+}
+.footer-copyright::after {
+	content: "©  2025 Le Minh Danh's Domain. All rights reserved.";
+	font-weight: 700;
+	color: black;
+}
+
+marquee {
+	color: red;
+	background-color: #fcdbbe;
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	font-size: 50px;
+	font-weight: bold;
+	text-align: center;
+	opacity: 75%;
+	height: 110px;
+	border-radius: 100px;
+}
+
+.box {
+	text-align: center;
+	color: white;
+	background-size: cover;
+	width: 33.3vw;
+	min-height: 500px;
+	align-items: center;
+	display: grid;
+	grid-template-columns: 1fr;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-clip: border-box;
+}
+
+.box:hover {
+	opacity: 75%;
+}
+
+.recipe-container {
+	gap: 24px;
+	padding: 10px 18px;
+	max-width: 1200px;
+	margin: 10px 50px 70px 50px;
+	padding: 10px;
+
+	border-radius: 15px;
+	box-shadow: 5px 5px gray;
+
+	background-color: #fcdbbe;
+}
+.recipe-info {
+	padding: 10px;
+}
+.recipe-info > h1,
+h2,
+h3 {
+	color: brown;
+}
+.recipe-info > ul {
+	color: black;
+	list-style: square;
+	padding-left: 40px;
+}
+
+body {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: 100;
+}
+
+.text-outline{
+	text-shadow: 0 0 3px black,0 0 3px black,0 0 3px black,0 0 3px black;
+}
+
+.header_image {
+	width: 100%;
+	gap: 24px;
+	padding: 10px 18px;
+	margin: 0 auto;
+	max-width: 1200px;
+	border-radius: 14px;
+
+	align-content: center;
+	background-size: cover;
+	background-color: darkred;
+	background-blend-mode: lighten;
+}
+
+.header_title {
+	background-color: #f962a0;
+	color: #023047;
+	font-size: xx-large;
+	font-weight: bolder;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 0 0 8px #fcf3c4, 0 0 8px #fcf3c4, 0 0 8px #fcf3c4,
+		0 0 8px #fcf3c4;
+	margin: 0px 50px;
+	padding: 5px;
+	border-radius: 14px 14px 0 0;
+}
+.container {
+	gap: 24px;
+	padding: 10px 18px;
+	max-width: 1200px;
+	margin-bottom: 50px;
+}
+/*IC-MENU*/
+.ic-menu {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+
+	justify-content: center;
+}
+.ic-menu-title{
+	font-size: xx-large;
+	font-weight: bolder;
+	text-transform: uppercase;
+	text-shadow: 0 0 8px #fcf3c4, 0 0 8px #fcf3c4, 0 0 8px #fcf3c4,
+		0 0 8px #fcf3c4;
+	color:023047;
+}
+.ic-menu-item {
+
+	width: 250px;
+	height: 250px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	align-content: end;	
+	text-align: center;
+	background-color: #fbc3b8;
+	border-radius: 10px;
+	margin: 10px;
+	padding: 10px;
+	box-shadow: 5px 5px 5px #f962a0;
+}
+
+.item-title {
+	padding-top: 10px;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: white;
+	text-shadow: 0 0 3px black,0 0 3px black,0 0 3px black,0 0 3px black;
+}
+
+.form-section {
+	margin: 24px 18px;
+	padding: 28px 24px;
+	background: #fff;
+	border-radius: 14px;
+	box-shadow: 0 2px 12px rgba(78, 84, 200, 0.08);
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.form-section h2 {
+	color: #f962a0;
+	margin-bottom: 18px;
+	font-size: 1.3rem;
+	font-weight: 700;
+	text-align: center;
+}
+.form-section form {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+.form-section input,
+.form-section textarea {
+	border: 1px solid #f962a0;
+	border-radius: 8px;
+	padding: 12px;
+	font-size: 1rem;
+	outline: none;
+	transition: border 0.2s;
+	background: #ffe6f0;
+}
+.form-section input:focus,
+.form-section textarea:focus {
+	border-color: #f962a0;
+}
+.form-section button {
+	padding: 12px;
+	background: linear-gradient(90deg, #f962a0 0%, #f7a3c6 100%);
+	color: white;
+	border: none;
+	border-radius: 8px;
+	font-weight: 600;
+	font-size: 1.05rem;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+.form-section button:hover {
+	background: #fa7aa6;
+}

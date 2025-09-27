@@ -71,7 +71,7 @@ ul {
 	height: 100px;
 	width: 100px;
 	display: block;
-	content: url("/images/logo.png");
+	content: url("./images/logo.png");
 	alt: "Loading";
 }
 .logo-title {
@@ -109,7 +109,7 @@ footer {
 	height: 50px;
 	width: 50px;
 	display: block;
-	content: url("/images/logo.png");
+	content: url("./images/logo.png");
 	alt: "Loading";
 	padding: 5px;
 }

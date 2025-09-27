@@ -253,7 +253,10 @@ body {
 	padding: 10px;
 	box-shadow: 5px 5px 5px #f962a0;
 }
-
+.ic-menu-item a {
+	text-decoration: none;
+	color: white;
+}
 .item-title {
 	padding-top: 10px;
 	text-transform: uppercase;
